@@ -1,0 +1,1054 @@
+/* Global */
+
+* {
+	padding: 0em;
+	margin: 0em;
+}
+
+html {
+	width: 100%;
+}
+/*Hintergrundfarbe und ggf. Grafik*/
+body {
+	width: 100%;
+	font-family: tahoma,helvetica,sans-serif;
+	font-size: 8pt;
+	color: #ddd;
+	min-width: 692px;
+	background: #666666 url('images/bg.png') repeat-x;
+}
+
+/* Common elements */
+
+/*Textfarbe z.B. Download/Freelech/Torrentnamen*/
+a {
+	text-decoration: none;
+	border: none;
+	color: #FFFFFF;/*e08007*/ 
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+
+a.similar_artist {
+	background-color: #444444;
+	display: block;
+	padding: 1px 4px;
+	color: #FFF;
+	border: 1px solid #fff;
+}
+
+a.similar_artist:hover {
+	background-color: #555;
+}
+
+.similar_artist_header {
+	color: #FFF;
+	background-color: #666;
+	border: 1px solid #fff;
+	padding: 3px 5px;
+}
+
+h1,h2,h3,h4 {
+	margin: 5px 0px;
+	font-weight: bold;
+}
+
+h2 {
+	text-align: center;
+	font-size: 12pt;
+}
+
+h2 a {
+color: #CCD8E1;
+}
+
+h4 {
+	font-size: 8pt;
+}
+
+p {
+	margin: 10px 5px;
+}
+
+li {
+	margin: 5px 15px;
+}
+
+input {
+	padding: 2px 3px;
+}
+
+textarea {
+	padding: 2px 3px;
+}
+
+img {
+	border: none;
+}
+
+/* Ratio Colors */
+
+.r00 { color: #FF0000; }
+.r01 { color: #FF1300; }
+.r02 { color: #FF1300; }
+.r03 { color: #FF2600; }
+.r04 { color: #FF4C00; }
+.r05 { color: #FF5E00; }
+.r06 { color: #FF5E00; }
+.r07 { color: #FF7100; }
+.r08 { color: #FF9700; }
+.r09 { color: #FFAA00; }
+.r10 { color: #74C42E; }
+.r20 { color: #418B00; }
+.r50 { color: #418B00; }
+.r99 { color: #418B00; }
+
+/* Red to Blue*/
+/*
+.r00 { color: #FF0000; }
+.r01 { color: #f30109; }
+.r02 { color: #e70013; }
+.r03 { color: #ce0229; }
+.r04 { color: #b7013c; }
+.r05 { color: #9f0250; }
+.r06 { color: #860264; }
+.r07 { color: #6e0379; }
+.r08 { color: #58038c; }
+.r09 { color: #44049d; }
+.r10 { color: #3204aa; }
+.r20 { color: #2605b5; }
+.r50 { color: #2605b5; }
+.r99 { color: #2605b5; }
+*/
+
+span.size1 {
+	font-size: 0.75em;
+}
+
+span.size2 {
+	font-size: 1em;
+}
+
+span.size3 {
+	font-size: 1.25em;
+}
+
+span.size4 {
+	font-size: 1.5em;
+}
+
+span.size5 {
+	font-size: 1.75em;
+}
+
+span.size6 {
+	font-size: 2em;
+}
+
+span.size7 {
+	font-size: 2.25em;
+}
+
+span.size8 {
+	font-size: 2.5em;
+}
+
+span.size9 {
+	font-size: 2.75em;
+}
+
+span.size10 {
+	font-size: 3em;
+}
+
+ul.thin {
+	margin: 0px 0px 0px 25px;
+	padding: 0px;
+}
+
+ul.thin li {
+	margin: 0px 0px;
+	padding: 0px;
+}
+
+/* Layout (Every page) */
+
+#header {
+	width: 100%;
+	padding: 0px 0 0 0;
+}
+
+#content {
+	margin: auto;
+	/*width: 100%;*/
+	overflow: hidden;
+	background: #333333;
+	position: relative;
+	border-right:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+	border-bottom:1px solid #ffffff;
+}
+
+#wrapper {
+	width: 98%;
+	margin: 0px auto;
+}
+
+#footer {
+	/*margin-top: 40px;*/
+	width: 100%;
+	text-align: center;
+	padding: 1em 0;
+	color: #fff;
+}
+/*Logo Oben / Page Banner*/
+#logo {
+	height: 200px;
+	margin: 0 auto;
+	background: url('images/logo.png') no-repeat top center;
+}
+
+#logo a {
+	border: none;
+	width: 500px;
+	height: 200px;
+	display: block;
+	margin:auto;
+}
+
+#logo a:hover {
+	border: none;
+}
+
+#menu {
+	padding: 0.6em 0;
+	text-align: center;
+	background: #333333 url('images/menu.png') repeat-x top left;
+	font-size: 10pt;
+	border-right:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+}
+
+#menu ul li {
+	position: relative;
+	display: inline;
+	padding: 6px 0;
+	margin: 0px;
+}
+
+
+#menu ul li a {
+	padding: 0.6em 2%;
+	color: #ffffff;
+	font-weight:bold;
+}
+
+#menu ul li a.active {
+	background-color: #8B0000;
+}
+
+#menu ul li a:hover {
+	background: #9F9FB4 url('images/tab.png') repeat-x bottom center;
+	text-decoration: none;
+	color: #fff;
+}
+
+#index #nav_index a, #torrents #nav_torrents a, #collage #nav_collages a, #requests #nav_requests a, #forums #nav_forums a, #top10 #nav_top10 a, #rules #nav_rules a, #kb #nav_kb a, #staff #nav_staff a{
+	background: #9F9FB4 url('images/tab.png') repeat-x bottom center;
+	color:#fff;
+}
+
+#userinfo {
+	color: #fff;
+	/*width: 100%;*/
+	text-align: center;
+	font-size: 10pt;
+	padding: 0 0 0 0;
+	background: #323232 url('images/header3.png') repeat-x;
+	border-top:1px solid #ffffff;
+	border-right:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+}
+
+#userinfo img {
+	
+}
+
+#userinfo ul {
+	display: inline;
+	/*margin: 0px 0.8%;*/
+	padding: 4px;
+}
+
+#userinfo ul li {
+	position: relative;
+	display: inline;
+	margin: 0 0.1em;
+	line-height: 20px;
+	vertical-align: middle;
+	padding: 2px;
+}
+
+#userinfo a {
+	color: #fff;
+}
+
+#userinfo a:hover {
+	text-decoration: underline;
+}
+
+#userinfo b a {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+/*Stats Upload / Download*/
+#userinfo span.stat {
+	color: #009900;/*e08007*/
+}
+
+#userinfo_username {
+font-weight:bold;
+color: #999;
+	position: absolute;
+	top: 0px;
+	right: 5%;
+	font-size:10pt;
+}
+
+#userinfo_username a{
+color: #999;
+}
+
+
+
+#userinfo_major {
+	position: absolute;
+	top: 20px;
+	right: 5%;
+	color:#fff;
+}
+
+#userinfo_major a{
+color: #fff;
+}
+/*Suchleiste*/
+#searchbars {
+	text-align: center;
+	background-color: #333333;
+	padding: 15px 0px;
+	border-right:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+	
+}
+/*Suchleiste inaktiv*/
+#searchbars input {
+	position: relative;
+	padding: 3px 3px 3px 3px;
+	padding-left: 30px;
+	font-size: 1.2em;/*0.9em*/
+	/*font-weight:bold;*/
+	color: #666666;/*888888*/
+	border: 0px solid #000;
+	background: transparent url(images/searchbox_inaktiv.png) top no-repeat;
+	width: 120px;
+	/*background: #000066;*//*8b0000*/
+}
+#searchbars input:focus {
+  background: transparent url(images/searchbox_aktiv.png) top left no-repeat;
+
+
+}
+
+#searchbars ul {
+	margin: 0 auto;
+}
+
+#searchbars ul li {
+	display: inline;
+	margin: 0px 1px;
+}
+
+#searchbars ul li form {
+	display: inline;
+}
+
+#alerts {
+	/*width: 100%;*/
+	background-color: #333333;
+	border-right:1px solid #ffffff;
+	border-left:1px solid #ffffff;
+}
+
+.alertbar.blend {
+	background-color: #222;
+	border: 1px solid #e6e6e6;
+}
+
+#cat-selector ul {
+	width: 100%;
+}
+
+#cat-selector ul li {
+	display: inline;
+	width: 12em;
+	height: 1em;
+	float: left;
+}
+
+.alertbar {
+	background-color: #8B0000;
+	text-align: center;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 0.95em;
+	width: 350px;
+	margin: 0px auto 0px auto;
+	padding: 10px;
+}
+
+.alertbar a {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.alertbar a:hover {
+	background-color: #0000CC;
+	text-decoration: none;
+}
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+}
+
+input.hidden {
+	position: absolute;
+	display: none;
+}
+
+/* Layout */
+
+.thin {
+	width: 970px;
+	margin: 0px auto 10px;
+}
+
+#userinfo_username .brackets:before {
+	content: "[";
+}
+
+#userinfo_username .brackets:after {
+	content: "]";
+}
+
+#userinfo_major .brackets:before {
+	font-weight: bold;
+	content: "[";
+}
+
+#userinfo_major .brackets:after {
+	font-weight: bold;
+	content: "]";
+}
+
+div.linkbox {
+	text-align: center;
+	padding: 5px;
+}
+
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.min_padding {
+	padding: 0px;
+	margin: 0px 0px;
+}
+
+p.min_padding {
+	margin: 2px 0px;
+}
+
+.pad {
+	padding: 1em;
+}
+
+.pad, .pad pre {
+	color: #eeeeee;
+}
+
+.vertical_space {
+	margin-bottom: 10px;
+}
+/*Hintergrundfarbe Boxen*/
+.box {
+	font-size: 8pt;
+	background: #666666;
+	border: 1px solid #000;
+}
+
+.pad h3,.pad h4,.padbox h3,.padbox h4 {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+.sidebar {
+	float: right;
+	width: 250px;
+	height: 100%;
+}
+
+.sidebar .box {
+	margin: 0px 5px 10px 5px;
+}
+
+.head {
+	padding: 4px;
+	border-bottom: 1px solid #222;
+	background: #323232 url('images/header3.png') repeat-x top center;
+	color: #fff;
+}
+/*Schriftfarbe Absender einer PM z.B.*/
+.head a {
+color: #000066;/*e08007*/
+}
+
+.head a:hover {
+color:#fff;
+}
+
+.body {
+	padding: 3px 10px 10px 10px;
+}
+
+.main_column {
+	margin: 0px 255px 10px 0px;
+	width: 710px;
+}
+
+.main_column .box,.main_column table {
+	margin-bottom: 10px;
+}
+
+.thin .box {
+	margin-bottom: 10px;
+}
+
+.tags {
+	padding: 0px 0px 0px 20px;
+	font-style: italic;
+}
+
+.tags a {
+	color: #000000;/*999999*/
+}
+
+.tags a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+.noborder {
+	border: none;
+}
+
+ul.nobullet {
+	list-style-type: none;
+}
+/*Hintergrundfarbe von z.B. latest Forumposts*/
+table {
+	width: 100%;
+	border: 1px solid #000 !important;
+	border-collapse: collapse;
+	background: #666666;/*#480000*/
+}
+
+.box table {
+background: none;
+}
+
+tr {
+	/*border: 1px solid #444;*/
+	/*background: #fff url('grads/box.png') repeat-x top center;*/
+}
+/*Requests Hintergrundfarbe*/
+tr.rowb {
+	background: #666666;/*340000*/
+}
+/*Request Hintergrundfarbe2*/
+tr.rowa {
+	background: #666666;/*480000*/
+}
+
+td {
+	/* border: 1px solid #000; */
+	padding: 5px;
+	text-align: left;
+}
+
+.colhead {
+	background: #323232 url('images/header3.png') repeat-x top center;
+	font-weight: bold;
+	color: #fff;
+}
+/*Textfarbe z.B. Name/Year/Addes/Size*/
+.colhead a {
+color: #000066;
+}
+
+td.colhead,.colhead td {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.colhead .sign {
+	padding: 0px 8px 0px 8px;
+	font-size: 12pt;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+.colhead_dark {
+	background: #323232 url('images/header3.png') repeat-x top center;
+	color: #fff;
+	vertical-align: middle;
+	font-weight:bold;
+}
+/*Schriftfarbe bei Forenposts von z.B. Nickname/Quote/Reply etc.*/
+.colhead_dark a {
+	color: #000066;/*e08007*/
+}
+
+td.label {
+	font-weight: bold;
+	text-align: right;
+	width: 180px;
+}
+
+table.slice {
+	margin-top: -1px;
+}
+
+.error_message {
+	/*border: 1px solid #666;*/
+	padding: 3px 0px 3px 0px;
+	background-color: #fff;
+	text-align: center;
+	color: #d10000;
+	font-weight: bold;
+}
+
+.save_message {
+	/*border: 1px solid #666;*/
+	padding: 3px 0px 3px 0px;
+	background-color: #fff;
+	text-align: center;
+	color: #d10000;
+	font-weight: bold;
+}
+
+.elem_error {
+	border: 3px solid #B00D0D;
+}
+
+.hide {
+	display: none;
+}
+
+/* Layout (home page) */
+
+ul.stats li {
+	padding: 0px 0px 1px 0px;
+}
+
+ul.poll li {
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+}
+
+ul.poll li.graph {
+	margin-bottom: 3px;
+	padding-left: 20px;
+}
+
+/* Layout (Torrents page) */
+
+.show_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('images/showcm.png') no-repeat center center;
+}
+
+.hide_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('images/hidecm.png') no-repeat center center;
+}
+
+.show_torrents_link {
+	border: none;
+	width: 28px;
+	height: 28px;
+	display: block;
+}
+
+.filter_torrents {
+	width: 750px;
+	margin: auto;
+}
+
+.filter_torrents .submit {
+	text-align: right;
+	padding-top: 5px;
+}
+
+.cat_list tr td {
+	border: none;
+}
+
+.torrent_table tr {
+	vertical-align: top;
+}
+
+.colhead .sign, .colhead_dark .sign {
+	padding: 0px 8px 0px 8px;
+	vertical-align:middle;
+	text-align:center;
+	font-size: 12pt;
+	font-weight: bold;
+}
+/*Hintergrundfarbe Torrents*/
+tr.torrent {
+background: #999999;/*480000*/
+}
+
+.torrent_table tr.group, tr.group_torrent, tr.torrent {
+	/*background-color: #bbcde8;*/
+}
+
+tr.group, tr.torrent{
+font-weight:bold;
+}
+
+.torrent_table div.tags {
+	font-weight: normal;
+}
+
+.torrent_table tr .center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.group_torrent span {
+	float: right;
+}
+
+.torrent span {
+	font-weight:normal;
+	float:right;
+}
+/*Hintergrundfarbe von Torrentgruppen*/
+.group {
+  background: #666666;/*480000*/
+}
+/*Hintergrundfarbe von direktladbaren Torrents*/
+.group_torrent {
+  background: #333333;/*340000*/
+}
+
+body#top10 tr {
+	/*background:#bbcde8;*/
+}
+
+body#top10 tr.colhead {
+  background: #323232 url('images/header3.png') repeat-x top center;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+/* Layout (Forums) */
+
+table.forum_post {
+	margin: 10px 0px;
+}
+
+table.forum_post td {
+	border: 1px solid #444;
+}
+
+table.forum_unread {
+	border: 2px solid #CCC;
+}
+
+td.avatar {
+	width: 150px;
+	padding: 0px;
+}
+
+table.forum_post td.body {
+	width: 690px;
+}
+
+tbody {
+	max-width: 690px;
+}
+/*Umrandung Uploader Feld im Torrent*/
+blockquote {
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #006600;/*e08007*//*dashed*/
+}
+
+pre, blockquote {
+  color:#aaa !important;
+}
+
+/* Layout (Inbox) */
+
+/*Hintergrundfarbe ungelesene PM*/
+tr.unreadpm {
+	background-color: #480000;/*e08007*/
+}
+
+tr.unreadpm a{
+color:#FFFFFF;/*480000*/
+}
+
+/* Layout (Permission Page) */
+
+.permission_head {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permissions {
+	width: 930px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permission_container {
+	float: left;
+	width: 300px;
+	padding: 5px;
+}
+
+.permission_container input {
+	margin: 0px 3px 5px 0px;
+	vertical-align: top;
+}
+
+.submit_container {
+	clear: both;
+	text-align: right;
+}
+
+/* Layout (Invite tree) */
+
+ul .invitetree {
+	margin: 0px 0px 0px 25px;
+}
+
+.invitetree li {
+	list-style: none;
+	margin: 10px 2px;
+}
+
+/* Layout (MISC) */
+/*Umfrage*/
+/*Umfrage links*/
+#left_poll {
+	width: 2px;
+	height: 9px;
+	/*background: url('bar_left.gif') no-repeat center center;*/
+	background-color:#0000FF;/*#1d0000*/
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+/*Umfrage mitte*/
+#center_poll {
+	height: 9px;
+	/*background: url('bar.gif') repeat;*/
+	background-color:#0000FF;/*#1d0000*/
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+/*Umfrage rechts*/
+#right_poll {
+	width: 2px;
+	height: 9px;
+	/*background: url('bar_right.gif') no-repeat center center;*/
+	background-color:#0000FF;/*#1d0000*/
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+.curtain {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.8;
+	opacity: .80;
+	filter: alpha(opacity=80);
+}
+
+.lightbox {
+	display: none;
+	position: fixed;
+	text-align: center;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	padding: 0px;
+	z-index: 1002;
+	overflow: auto;
+}
+
+table#torrent_table.torrent_table {
+	width: 970px;
+	margin: auto;
+}
+
+form tr {
+	/*background: #bbcde8;*/
+}
+
+#forums .vertical_margin {
+    margin: 0px;
+}
+
+#torrents .vertical_margin {
+    margin: 0px;
+}
+
+.head img[alt="Donor"], img[alt="Warned"], img[alt="Banned"], img[alt="RSS"]{
+   margin-top: -13px !important;
+}
+
+
+/* -------------------------------*/
+/* recommended torrents tooltip   */
+/* -------------------------------*/
+a.rc_tooltip, a.rc_tooltip:link, a.rc_tooltip:visited, a.rc_tooltip:active {
+  position: relative;
+  text-decoration: none;
+  font-style: italic;
+  color: #0000ff;
+}
+  
+a.rc_tooltip:hover {
+  color: #0000ff;
+  background: transparent;
+  z-index: 2;
+}
+
+a.rc_tooltip span {
+  display: none;
+  text-decoration: none;
+}
+
+a.rc_tooltip:hover span {
+  display: block! important;
+  position: absolute;
+  top: -180px;
+  left: -41px;
+  width: 150px;
+  z-index: 2;
+  color: #000000;
+  border:1px solid #000000;
+  background: #FFFFDD;
+  font: 10px Verdana, sans-serif;
+  text-align: left;
+  overflow: hidden;
+  padding: 5px 5px 5px 5px;
+}
+
+
+
+/* -----------------*/
+/* browse tooltip   */
+/* -----------------*/
+a.br_tooltip, a.br_tooltip:link, a.br_tooltip:visited, a.br_tooltip:active {
+  position: relative;
+  text-decoration: none;
+}
+  
+a.br_tooltip:hover {
+  background: transparent;
+  z-index: 2;
+}
+
+a.br_tooltip span {
+  display: none;
+  text-decoration: none;
+}
+
+a.br_tooltip:hover span {
+  display: block !important;
+  position: absolute;
+  top: -180px;
+  left: 350px;
+  z-index: 2;
+  border:none;
+  background: transparent;
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+}
+
+.tickets_search {
+                width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 8pt;
+        }
+        
+        .tickets_categories {
+                float: left;
+                text-align: left;
+                padding: .5em;
+        }
+        
+        .tickets_status {
+                float: right;
+                padding: 0.5em;
+                text-align: left;
+        }
+        
+        .small_label {
+                width: 0%;
+                text-align: right;
+                font-weight: bold;
+        }
+        
+        .filter_tickets {
+                width:850px;
+                margin-left:auto;
+                margin-right:auto;
+                margin-bottom:15px;
+        }
+        
+        .filter_tickets .submit {
+                text-align:right;
+                padding-top:5px;
+        }
